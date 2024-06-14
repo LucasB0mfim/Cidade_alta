@@ -42,7 +42,7 @@ export const Btn = styled.button`
 
 export const BtnReset = styled.button`
   color: #fff;
-  width: 20vw;
+  width: 330px;
   height: 10vh;
   font-weight: 800;
   letter-spacing: 2px;
@@ -70,7 +70,7 @@ export const Start = styled.button``
 export const Instruction = styled.p`
   color: #000;
   font-size: 15px;
-  font-weight: 800;
+  font-weight: 600;
   margin-bottom: 15px;
 `
 
