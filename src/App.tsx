@@ -1,5 +1,16 @@
+import { BrowserRouter } from 'react-router-dom'
+
+import Rotas from './routes'
+
+import { GlobalStyle } from './styles'
+
 function App() {
-  return <div></div>
+  return (
+    <BrowserRouter>
+      <GlobalStyle />
+      <Rotas />
+    </BrowserRouter>
+  )
 }
 
 export default App
