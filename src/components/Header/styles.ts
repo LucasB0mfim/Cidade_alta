@@ -6,14 +6,17 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   background: #000;
-  opacity: 0.4;
-`
 
-export const Image = styled.img`
-  position: absolute;
-  top: 18px;
-  left: 10px;
-  width: 56px;
-  color: #fff;
-  z-index: 1;
+  header {
+    max-width: 1240px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    img {
+      width: 56px;
+      color: #fff;
+    }
+  }
 `

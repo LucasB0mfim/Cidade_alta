@@ -4,8 +4,11 @@ import * as S from './styles'
 
 const Header = () => (
   <>
-    <S.Image src={icon} />
-    <S.Container />
+    <S.Container>
+      <header>
+        <img src={icon} />
+      </header>
+    </S.Container>
   </>
 )
 

@@ -6,6 +6,17 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
+    z-index: 1;
+  }
 `
 
 export const Card = styled.div`
@@ -19,6 +30,8 @@ export const Card = styled.div`
   background: rgb(255, 192, 70);
   padding: 80px 0;
   border-radius: 5px;
+  z-index: 2;
+  box-shadow: 0px 2px 10px #000;
 `
 
 export const Btn = styled.button`

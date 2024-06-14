@@ -1,3 +1,4 @@
+import wallpaper from '../../assets/images/wallpaper.jpg'
 import React, { useState, useEffect, useRef } from 'react'
 import * as S from './styles'
 
@@ -126,6 +127,7 @@ const Game: React.FC = () => {
         </S.BtnReset>
       </S.Card>
       <S.Points>Pontuação: {score}</S.Points>
+      <img src={wallpaper} />
     </S.Container>
   )
 }
