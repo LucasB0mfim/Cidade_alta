@@ -38,7 +38,7 @@ const LogIn = () => {
       <S.Container>
         <form onSubmit={form.handleSubmit}>
           <div>
-            <label htmlFor="name">Nome</label>
+            <label htmlFor="name">Seu nome</label>
             <input
               type="text"
               name="name"

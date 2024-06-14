@@ -15,4 +15,8 @@ export const GlobalStyle = createGlobalStyle`
       margin: 0;
       font-family: "Europa", sans-serif;
   }
+
+  body {
+    background: rgb(47, 51, 79);
+  }
 `
