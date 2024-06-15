@@ -8,7 +8,8 @@ export const colors = {
   gray: '#2c2c2c',
   beige: '#feda99',
   lightYellow: '#ffecac',
-  lightGray: '#949494'
+  lightGray: '#949494',
+  lightGreen: '#6fac70'
 }
 
 export const GlobalStyle = createGlobalStyle`
