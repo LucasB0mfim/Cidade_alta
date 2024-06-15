@@ -20,21 +20,21 @@ export const Card = styled.div`
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 0px 0px 50px #000;
   background: ${colors.yellow};
 `
 
 export const Shadow = styled.div`
-  width: 20.5vw;
-  height: 11.5vh;
+  width: 20.8vw;
+  height: 12vh;
   background: ${colors.black};
   position: absolute;
   top: 0;
   left: 0;
   z-index: 0;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
 `
 
 export const StartGame = styled.div`
@@ -48,8 +48,8 @@ export const StartGame = styled.div`
 
 export const BtnStart = styled.button`
   position: absolute;
-  top: 3px;
-  left: 3px;
+  top: 4px;
+  left: 5.5px;
   color: ${colors.white};
   outline: none;
   width: 20vw;
@@ -58,11 +58,14 @@ export const BtnStart = styled.button`
   font-weight: 800;
   align-items: center;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
-  background: ${colors.gray};
+  background: rgb(204, 204, 204);
+  background: linear-gradient(180deg, ${colors.gray} 0%, rgba(0, 0, 0, 1) 100%);
+
   z-index: 1;
   transition: transform 0.3s ease;
+  box-shadow: 0px 2px 2px ${colors.lightGray};
 
   &:hover {
     transform: translateY(2px);
@@ -123,8 +126,5 @@ export const Points = styled.p`
   top: 20%;
   text-align: center;
   color: ${colors.white};
-  // padding: 10px;
-  // background: ${colors.gray};
-  // border-radius: 5px;
   filter: drop-shadow(0px 1px 3px #000);
 `

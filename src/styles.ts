@@ -3,9 +3,12 @@ import gta from './assets/fonts/pricedown.otf'
 
 export const colors = {
   black: '#1d1d1d',
-  yellow: 'rgb(255, 192, 70)',
+  yellow: '#f9b036',
   white: '#fff',
-  gray: '#2c2c2c'
+  gray: '#2c2c2c',
+  beige: '#feda99',
+  lightYellow: '#ffecac',
+  lightGray: '#949494'
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -21,9 +24,5 @@ export const GlobalStyle = createGlobalStyle`
       padding: 0;
       margin: 0;
       font-family: "gta", sans-serif;
-  }
-
-  body {
-    background: rgb(47, 51, 79);
   }
 `
