@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import wallpaper from '../../assets/images/wallpaper.jpg'
+import { colors } from '../../styles'
 
 export const Container = styled.div`
   width: 100%;
@@ -6,104 +8,123 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.2;
-    z-index: 1;
-  }
+  background-image: url(${wallpaper});
+  object-fit: cover;
 `
 
 export const Card = styled.div`
   width: 40vw;
   height: 300px;
-  color: #fff;
+  color: ${colors.white};
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-direction: column;
-  background: rgb(255, 192, 70);
-  padding: 80px 0;
+  justify-content: center;
   border-radius: 5px;
-  z-index: 2;
-  box-shadow: 0px 2px 10px #000;
+  box-shadow: 0px 0px 50px #000;
+  background: ${colors.yellow};
 `
 
-export const Btn = styled.button`
-  color: #fff;
-  width: 20vw;
-  height: 10vh;
-  font-weight: 800;
-  letter-spacing: 2px;
+export const Shadow = styled.div`
+  width: 20.5vw;
+  height: 11.5vh;
+  background: ${colors.black};
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
   border: none;
   border-radius: 5px;
-  background: #1d1d1d;
+`
+
+export const StartGame = styled.div`
+  position: relative;
+  width: 20vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+export const BtnStart = styled.button`
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  color: ${colors.white};
+  outline: none;
+  width: 20vw;
+  height: 10vh;
+  font-size: 2.5vw;
+  font-weight: 800;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  box-shadow: 0px 2px 10px #000;
-  transition: all linear 0.2s;
+  background: ${colors.gray};
+  z-index: 1;
+  transition: transform 0.3s ease;
 
   &:hover {
-    transition: all linear 0.2s;
-    background: #2c2c2c;
+    transform: translateY(2px);
   }
 `
 
 export const BtnReset = styled.button`
-  color: #fff;
   width: 330px;
   height: 10vh;
+  color: ${colors.white};
   font-weight: 800;
-  letter-spacing: 2px;
   border: none;
   border-radius: 5px;
-  background: #1d1d1d;
   cursor: pointer;
-  box-shadow: 0px 2px 10px #000;
+  background: ${colors.black};
   transition: all linear 0.2s;
+  box-shadow: 0px 2px 10px ${colors.black};
 
   &:hover {
+    background: ${colors.gray};
     transition: all linear 0.2s;
-    background: #2c2c2c;
   }
 `
 
 export const Game = styled.div`
-  text-align: center;
-  outline: none;
   height: 100%;
+  outline: none;
+  text-align: center;
 `
 
 export const Start = styled.button``
 
 export const Instruction = styled.p`
-  color: #000;
-  font-size: 15px;
+  text-align: center;
+  color: ${colors.black};
+  font-size: 3vw;
   font-weight: 600;
   margin-bottom: 15px;
 `
 
 export const letters = styled.p`
-  color: #000;
-  font-size: 1.5rem;
-  margin-bottom: 5px;
+  color: ${colors.black};
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
   }
 `
 
 export const Time = styled.p`
-  color: #000;
+  color: ${colors.black};
 `
 
 export const Points = styled.p`
+  font-size: 2vw;
   position: absolute;
   top: 20%;
-  right: 10%;
-  color: #fff;
+  text-align: center;
+  color: ${colors.white};
+  // padding: 10px;
+  // background: ${colors.gray};
+  // border-radius: 5px;
+  filter: drop-shadow(0px 1px 3px #000);
 `

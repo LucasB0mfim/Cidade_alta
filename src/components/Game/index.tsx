@@ -1,4 +1,3 @@
-import wallpaper from '../../assets/images/wallpaper.jpg'
 import React, { useState, useEffect, useRef } from 'react'
 import * as S from './styles'
 
@@ -102,8 +101,14 @@ const Game: React.FC = () => {
       <S.Card>
         {!gameStarted && ( // Mostra o botão apenas se o jogo não tiver começado
           <>
-            <S.Instruction>PRESSIONE AS TECLAS NA ORDEM CORRETA:</S.Instruction>
-            <S.Btn onClick={handleStartGame}>INICIAR JOGO</S.Btn>
+            <S.Instruction>
+              PRESSIONE AS TECLAS <br />
+              NA ORDEM CORRETA
+            </S.Instruction>
+            <S.StartGame>
+              <S.BtnStart onClick={handleStartGame}>INICIAR JOGO</S.BtnStart>
+              <S.Shadow></S.Shadow>
+            </S.StartGame>
           </>
         )}
         {gameStarted && (
@@ -123,11 +128,13 @@ const Game: React.FC = () => {
           onClick={restartGame}
           style={{ display: 'none' }}
         >
-          REINICIAR
+          <S.StartGame>
+            <S.BtnStart>REINICIAR</S.BtnStart>
+            <S.Shadow></S.Shadow>
+          </S.StartGame>
         </S.BtnReset>
       </S.Card>
       <S.Points>Pontuação: {score}</S.Points>
-      <img src={wallpaper} />
     </S.Container>
   )
 }

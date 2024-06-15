@@ -1,11 +1,12 @@
 import styled from 'styled-components'
+import { colors } from '../../styles'
 
 export const Container = styled.div`
   width: 100%;
   height: 90px;
   display: flex;
   justify-content: center;
-  background: #000;
+  background: ${colors.black};
 
   header {
     max-width: 1240px;
@@ -16,7 +17,7 @@ export const Container = styled.div`
 
     img {
       width: 56px;
-      color: #fff;
+      color: ${colors.white};
     }
   }
 `
